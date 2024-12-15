@@ -1,15 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* font-[family-name:var(--font-geist-mono)] */
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
   }
 }
@@ -18,4 +18,75 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.typewriter {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #fff; /* Cursor effect */
+  animation: typing 4s steps(50) 1s 1 normal both, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.glow {
+  height: 20rem;
+  width: 20rem;
+  background-image: linear-gradient(50deg, #008cff, #6287ff);
+  filter: blur(300px);
+  border-radius: 150px;
+  z-index: 0;
+  position: absolute;
+  left: 300px;
+  opacity:0.90;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style the entire scrollbar */
+::-webkit-scrollbar {
+  width: 6px; /* Makes the scrollbar thin */
+  height: 6px; /* For horizontal scrollbar */
+}
+
+/* Style the scrollbar track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: transparent; /* Makes the track transparent */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #333; /* Dark gray for a subtle blackish look */
+  border-radius: 10px; /* Rounded corners for a sleek look */
+}
+
+/* Style the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Slightly lighter when hovered for contrast */
 }
