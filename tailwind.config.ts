@@ -15,7 +15,7 @@ export default {
     },
   },
   daisyui: {
-    themes: ["forest"],
+    themes: ["black"],
   },
   plugins: [require("daisyui")],
 } satisfies Config;
