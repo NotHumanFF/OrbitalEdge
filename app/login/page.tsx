@@ -15,7 +15,7 @@ const Login: React.FC = () => {
             Launch your journey and let your ideas soar through the infinite expanse of interstellar space.
           </p>
           <div className='flex justify-center lg:justify-start items-center gap-1'>
-            <p className='py-0 font-mono'>Don't have an account?</p>
+            <p className='py-0 font-mono'>Do not have an account?</p>
             <Link href="/signup" className="link link-primary">Signup here!</Link>
           </div>
         </div>

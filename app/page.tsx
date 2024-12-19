@@ -18,7 +18,7 @@ export default function Hero() {
 
 
   const [isSticky, setIsSticky] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  // const [lastScrollY, setLastScrollY] = useState(0);
   
   useEffect(() => {
     const handleScroll = () => {
@@ -27,7 +27,7 @@ export default function Hero() {
       if(currentScrollY > 828) setIsSticky(true);
       else setIsSticky(false);
   
-      setLastScrollY(currentScrollY);
+      // setLastScrollY(currentScrollY);
     };
     if(window.scrollY > 828) setIsSticky(true);
     window.addEventListener('scroll', handleScroll);
